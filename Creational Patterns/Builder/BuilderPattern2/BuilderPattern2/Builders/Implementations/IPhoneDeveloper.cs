@@ -13,7 +13,7 @@ namespace BuilderPattern2.Builders.Implementations
 
 		private Phone phone;
 		public IPhoneDeveloper() => phone = new Phone();
-		public void CreateBox() => phone.AppendData("Произведен корпус Samsung\n");
+		public void CreateBox() => phone.AppendData("Произведен корпус Iphone\n");
 
 		public void CreateDisplay() => phone.AppendData("Произведен дисплей Iphone\n");
 

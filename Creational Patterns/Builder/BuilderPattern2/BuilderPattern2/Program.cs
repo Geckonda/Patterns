@@ -11,12 +11,12 @@ namespace BuilderPattern2
 		{
 			IDeveloper androidDeveloper = new AndroidDeveloper();
 
-			IDeveloper iPhoneDeveloper = new IPhoneDeveloper();
+			IDeveloper iosDeveloper = new IPhoneDeveloper();
 
 			Director director = new Director(androidDeveloper);
 			Phone samsung = director.MountOnlyPhone();
 			Console.WriteLine(samsung.AboutPhone());
-			director.SetDeveloper(iPhoneDeveloper);
+			director.SetDeveloper(iosDeveloper);
 			Phone iPhone = director.MountFullPhone();
 			Console.WriteLine(iPhone.AboutPhone());
 			Console.Read();
